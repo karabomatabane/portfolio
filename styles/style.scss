@@ -1,0 +1,144 @@
+// Define primary colors
+$primary-color: #6688FF;
+$primary-dark: darken($primary-color, 10%);
+$primary-light: lighten($primary-color, 10%);
+
+// Define secondary colors
+$secondary-color: #950774;
+$secondary-dark: darken($secondary-color, 10%);
+$secondary-light: lighten($secondary-color, 10%);
+
+// Define background and text colors
+$body-bg: #0B0F12;
+$card-bg: #111622;
+$text-color: #ffffff;
+$btn-color: #0B0F12;
+$html-color: #2E3440;
+
+// Other colors
+$link-color: #2ecc71;
+$link-hover-color: darken($link-color, 10%);
+
+// Usage example
+body {
+  background-color: $body-bg;
+  color: $text-color;
+  font-family: "Electrolize", sans-serif;
+}
+
+a {
+  color: $link-color;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+.button {
+  background-color: $primary-color;
+  color: #fff;
+
+  &:hover {
+    background-color: $primary-dark;
+  }
+}
+
+.space {
+  margin-top: 1.8rem !important;
+}
+
+.inner-space {
+  margin-top: 1rem !important;
+}
+
+.sec-space {
+  margin-top: .8rem !important;
+}
+
+.container {
+  padding: 1.8rem 1.2rem;
+}
+
+.my-card {
+  background-color: $card-bg;
+  padding: 1.8rem 1.2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.code-header {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-header {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37.95px;
+  text-align: center;
+}
+
+.txt-gradient {
+  background: linear-gradient(90deg, $primary-color, $secondary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.my-btn {
+  background-color: $primary-color;
+  color: $btn-color;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $primary-dark;
+  }
+}
+
+.section-header {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 24px;
+  text-align: start;
+  display: inline;
+}
+
+.section-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: inline;
+  text-align: justify-all;
+}
+
+.tag {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: $html-color;
+  display: inline;
+}
